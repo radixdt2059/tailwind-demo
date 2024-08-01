@@ -1,0 +1,81 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+@font-face
+{
+    font-family: 'playfair-regular';
+    src: url('../src/fonts/PlayfairDisplay-Regular.ttf');
+}
+@font-face
+{
+    font-family: 'playfair-bold';
+    src: url('../src/fonts/PlayfairDisplay-Bold.ttf');
+}
+@font-face
+{
+    font-family: 'playfair-italic';
+    src: url('../src/fonts/PlayfairDisplay-Italic.ttf');
+}
+@font-face
+{
+    font-family: 'playfair-medium';
+    src: url('../src/fonts/PlayfairDisplay-Medium.ttf');
+}
+@font-face
+{
+    font-family: 'playfair-semibold';
+    src: url('../src/fonts/PlayfairDisplay-SemiBold.ttf');
+}
+
+body.dark {
+    background-color: #292c35;
+}
+.checkbox {
+    opacity: 0;
+}
+
+.label {
+    padding: 1px;
+}
+
+.ball {
+    top: 1px;
+    left: 1px;
+    transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+    transform: translateX(20px);
+}
+@media (max-width: 1199px)
+{
+    #collapse-navbar
+    {
+        height: calc(100vh - 100px);
+        overflow: scroll;
+    }
+    nav.open
+    {
+        background-color: #04282D;
+    }
+    nav.open .open-menu, nav .close-menu
+    {
+        display: none;
+    }
+    nav.open .close-menu
+    {
+        display: block;
+    }
+}
+@media (max-width: 767px)
+{
+    #collapse-navbar
+    {
+        height: calc(100vh - 87px);
+    }
+}

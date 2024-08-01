@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindDemo</title>
+    <link rel="stylesheet" href="../dist/styles.css">
+</head>
+<body class="m-0">
+    <!-- <h1 class="m-20 text-darkGray text-5xl font-playfair-bold md:text-10xl">
+        Test
+    </h1> -->
+    <nav class="relative xl:flex xl:flex-wrap items-center justify-between xl:px-2 py-3 border-0 border-b border-thistleGreen bg-white border-solid dark:bg-black" id="menuBtn">
+      <div class="container xl:px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div class="xl:px-0 sm:px-4 px-3 flex flex-wrap items-center  xl:w-auto  w-full">
+          <button class="text-black xl:relative absolute cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent  xl:bg-white bg-transparent block xl:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('collapse-navbar')">
+            <img src="../src/images/toggle-button.svg" class="open-menu" alt="Toggle">
+            <img src="../src/images/close-btn.svg" class="close-menu" alt="Close">
+          </button>
+          <div class="relative flex xl:w-auto mx-auto px-4 xl:static xl:block lg:justify-start">
+            <a class="leading-relaxed inline-block  mr-4 py-2 whitespace-nowrap" href="#">
+              <img src="../src/images/haus-logo-black.svg" class="xl:w-auto md:w-52 open-menu w-40 h-auto dark:hidden" width="250" height="72">
+              <img src="../src/images/haus-logo-light.svg" class="xl:w-auto md:w-52 hidden close-menu w-40 h-auto dark:block" width="250" height="72">
+            </a>
+          </div> 
+        </div>
+        <div class="xl:w-auto xl:relative absolute xl:top-auto top-full w-full xl:flex flex-grow xl:items-center hidden xl:bg-white bg-darkGray dark:bg-black xl:pb-0 pb-5" id="collapse-navbar">
+          <ul class="flex w-full flex-col xl:flex-row list-none xl:justify-end xl:pb-0 pb-5 xl:m-auto m-0">
+            <li class="nav-item">
+              <a class="pr-14 xl:py-2 py-4  flex items-center xl:text-xxs md:text-base text-xxs uppercase tracking-widest xl:tracking-normal no-underline leading-snug font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue dark:text-white dark:xl:hover:text-lightGray" href="#">
+                Home
+              </a>
+            </li>
+            <li class="nav-item group dropdown inline-block relative">
+              <a class="pr-14 xl:py-2 py-4 flex items-center xl:text-xxs md:text-base text-xxs uppercase tracking-widest xl:tracking-normal no-underline leading-snug font-playfair-regular xl:text-black text-white xl:group-hover:text-jadeBlue dark:text-white dark:xl:group-hover:text-lightGray" href="#">
+                Blog
+                <svg width="9" height="6" viewBox="0 0 9 6" class="ml-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.07129 0.535645L4.60682 4.07118L8.14236 0.535644" stroke="currentcolor" stroke-width="1.5"/>
+                  </svg>                  
+              </a>
+              <ul class="dropdown-menu group-hover:block xl:border xl:border-thistleGreen xl:border-solid list-none xl:absolute hidden pl-0 xl:w-64 w-full box-border xl:bg-white bg-darkGray dark:bg-gray z-10">
+                <li class="nav-item pt-2">
+                  <a class="border-0 no-underline xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap mx-6 dark:text-white dark:xl:hover:text-lightGray" href="#">1st Full Post + 2 cols Grid</a>
+                </li>
+                <li class="nav-item">
+                  <a class="border-0 no-underline xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap mx-6 dark:text-white dark:xl:hover:text-lightGray" href="#">1st Full Post + list</a>
+                </li>
+                <li class="nav-item">
+                  <a class="border-0 no-underline xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap mx-6 dark:text-white dark:xl:hover:text-lightGray" href="#">2 cols Grid Layout</a>
+                </li>
+                <li class="nav-item">
+                  <a class="border-0 no-underline xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap mx-6 dark:text-white dark:xl:hover:text-lightGray" href="#">List Layout</a>
+                </li>
+                <li class="nav-item">
+                  <a class="border-0 no-underline xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap mx-6 dark:text-white dark:xl:hover:text-lightGray" href="#">3 cols Grid Layout</a>
+                </li>
+                <li class="nav-item pb-2">
+                  <a class="no-underline xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap mx-6 dark:text-white dark:xl:hover:text-lightGray" href="#">Standard Blog Layout</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item group dropdown inline-block relative">
+              <a class="pr-14 xl:py-2 py-4  flex items-center xl:text-xxs md:text-base text-xxs uppercase tracking-widest xl:tracking-normal no-underline leading-snug font-playfair-regular xl:text-black text-white xl:group-hover:text-jadeBlue dark:text-white dark:xl:group-hover:text-lightGray" href="#">
+                Features
+                <svg width="9" height="6" viewBox="0 0 9 6" class="ml-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.07129 0.535645L4.60682 4.07118L8.14236 0.535644" stroke="currentcolor" stroke-width="1.5"/>
+                  </svg>                  
+              </a>
+              <ul class=" dropdown-menu group-hover:block xl:border xl:border-thistleGreen xl:border-solid list-none xl:absolute hidden pl-0 xl:w-64 w-full box-border  xl:bg-white bg-darkGray dark:bg-gray z-10">
+                <li class="nav-item group-1 dropdown relative pt-2">
+                  <a class="trigger border-0 items-center  no-underline xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xd:group-1-xl:hover:text-jadeBlue py-4 xl:flex inline-block justify-between whitespace-no-wrap mx-6 dark:text-white xl:hover:text-jadeBlue dark:xl:hover:text-lightGray" href="#">Headers
+                    <svg width="8" height="10" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.52637 8L5.07088 4.47347L1.54435 0.928955" stroke="currentcolor" stroke-width="1.5"/>
+                      </svg>                      
+                  </a>
+                  <ul class="dropdown-menu group-1-hover:block list-none xl:border xl:border-thistleGreen xl:border-solid xl:absolute hidden pl-0 right-0 left-full w-full top-0 box-border xl:bg-white bg-darkGray dark:text-white dark:bg-gray z-10">
+                    <li class="nav-item pt-2">
+                      <a class="border-0 mx-6 no-underline xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap dark:text-white dark:xl:hover:text-lightGray" href="#">Header 1</a></li>
+                    <li class="nav-item pb-2">
+                      <a class="no-underline py-4 mx-6 block whitespace-no-wrap xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue dark:text-white dark:xl:hover:text-lightGray" href="#">Header 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item group-1 dropdown relative">
+                  <a class="trigger mx-6 no-underline border-0 items-center  xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xd:group-1-xl:hover:text-jadeBlue py-4 xl:flex inline-block justify-between whitespace-no-wrap dark:text-white xl:hover:text-jadeBlue dark:xl:hover:text-lightGray" href="#">Sliders
+                    <svg width="8" height="10" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.52637 8L5.07088 4.47347L1.54435 0.928955" stroke="currentcolor" stroke-width="1.5"/>
+                      </svg>  
+                  </a>
+                  <ul class="dropdown-menu group-1-hover:block list-none xl:border xl:border-thistleGreen xl:border-solid  xl:absolute hidden pl-0 right-0 left-full w-full top-0 box-border xl:bg-white bg-darkGray dark:bg-gray z-10">
+                    <li class="nav-item pt-2">
+                      <a class="border-0 no-underline mx-6 xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap dark:text-white dark:xl:hover:text-lightGray" href="#">Slider 1</a></li>
+                    <li class="nav-item pb-2">
+                      <a class="border-0 no-underline mx-6 xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap dark:text-white dark:xl:hover:text-lightGray" href="#">Slider 2</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item pb-2 group-1 dropdown relative">
+                  <a class="trigger mx-6 no-underline border-0 xl:text-xxs md:text-base text-xxs items-center  font-playfair-regular xl:text-black text-white xd:group-1-xl:hover:text-jadeBlue xl:flex inline-block  py-4 justify-between whitespace-no-wrap dark:text-white xl:hover:text-jadeBlue dark:xl:hover:text-lightGray" href="#">Sidebars
+                    <svg width="8" height="10" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.52637 8L5.07088 4.47347L1.54435 0.928955" stroke="currentcolor" stroke-width="1.5"/>
+                      </svg> 
+                  </a>
+                  <ul class="dropdown-menu group-1-hover:block list-none xl:border xl:border-thistleGreen xl:border-solid xl:absolute hidden pl-0 right-0 left-full w-full top-0 box-border xl:bg-white bg-darkGray  dark:bg-gray z-10">
+                    <li class="nav-item pt-2">
+                      <a class="border-0 no-underline mx-6 xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap dark:text-white dark:xl:hover:text-lightGray" href="#">Slide Bar 1</a></li>
+                    <li class="nav-item pb-2">
+                      <a class="border-0 no-underline mx-6 xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap dark:text-white dark:xl:hover:text-lightGray" href="#">Slide Bar 2</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item group dropdown inline-block relative">
+              <a class="pr-14 xl:py-2 py-4  flex items-center xl:text-xxs md:text-base text-xxs uppercase tracking-widest xl:tracking-normal no-underline leading-snug font-playfair-regular xl:text-black text-white xl:group-hover:text-jadeBlue dark:text-white dark:xl:group-hover:text-lightGray" href="#">
+                Categories
+                <svg width="9" height="6" viewBox="0 0 9 6" class="ml-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.07129 0.535645L4.60682 4.07118L8.14236 0.535644" stroke="currentcolor" stroke-width="1.5"/>
+                  </svg>                  
+              </a>
+              <ul class="dropdown-menu group-hover:block xl:border xl:border-thistleGreen xl:border-solid list-none xl:absolute hidden pl-0 xl:w-64 w-full box-border  xl:bg-white bg-darkGray z-10 dark:bg-gray">
+                <li class="nav-item pt-2">
+                  <a class="border-0 no-underline xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap mx-6 dark:text-white dark:xl:hover:text-lightGray" href="#">Lifestyle</a>
+                </li>
+                <li class="nav-item">
+                  <a class="border-0 no-underline xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap mx-6 dark:text-white dark:xl:hover:text-lightGray" href="#">Travel</a>
+                </li>
+                <li class="nav-item pb-2">
+                  <a class="no-underline xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap mx-6 dark:text-white dark:xl:hover:text-lightGray" href="#">Photo</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="pr-14 xl:py-2 py-4  flex items-center xl:text-xxs md:text-base text-xxs uppercase tracking-widest xl:tracking-normal no-underline leading-snug font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue dark:text-white dark:xl:hover:text-lightGray" href="#">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="pr-14 xl:py-2 py-4+  flex items-center xl:text-xxs md:text-base text-xxs uppercase tracking-widest xl:tracking-normal no-underline leading-snug font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue dark:text-white dark:xl:hover:text-lightGray" href="#">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item group dropdown inline-block relative">
+              <a class="pr-14 xl:py-2 py-4  flex items-center xl:text-xxs md:text-base text-xxs uppercase tracking-widest xl:tracking-normal no-underline leading-snug font-playfair-regular xl:text-black text-white xl:group-hover:text-jadeBlue dark:text-white dark:xl:group-hover:text-lightGray" href="#">
+                Shop
+                <svg width="9" height="6" viewBox="0 0 9 6" class="ml-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.07129 0.535645L4.60682 4.07118L8.14236 0.535644" stroke="currentcolor" stroke-width="1.5"/>
+                  </svg>                  
+              </a>
+              <ul class="dropdown-menu group-hover:block xl:border xl:border-thistleGreen xl:border-solid list-none xl:absolute hidden pl-0 xl:w-64 w-full box-border xl:bg-white bg-darkGray dark:bg-gray z-10">
+                <li class="nav-item pt-2">
+                  <a class="border-0 no-underline xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap mx-6 dark:text-white dark:xl:hover:text-lightGray" href="#">Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="border-0 no-underline xl:border-b xl:border-thistleGreen xl:border-solid xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap mx-6 dark:text-white dark:xl:hover:text-lightGray" href="#">Checkout</a>
+                </li>
+                <li class="nav-item pb-2">
+                  <a class="no-underline xl:text-xxs md:text-base text-xxs font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue py-4 flex justify-between whitespace-no-wrap mx-6 dark:text-white dark:xl:hover:text-lightGray" href="#">My Account</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="pr-14 xl:py-2 py-4  flex items-center xl:text-xxs md:text-base text-xxs uppercase tracking-widest xl:tracking-normal no-underline leading-snug font-playfair-regular xl:text-black text-white xl:hover:text-jadeBlue dark:text-white dark:xl:hover:text-lightGray" href="#">
+                Portfolio
+              </a>
+            </li>
+            <li class="flex items-center">
+              <input type="checkbox" class="checkbox absolute" id="checkbox">
+              <label for="checkbox" class="label w-10 h-5 bg-black dark:bg-white flex items-center justify-center rounded-full relative">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball w-5 h-5 bg-white dark:bg-black absolute rounded-full">
+            </div>
+            </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <section class="bg-lightGreen py-16 md:py-14 sm:py-11 dark:bg-darkGray">
+      <div class="xl:container mx-auto">
+        <div class="flex justify-between items-end">
+            <img src="images/home_banner1.png" alt="Home-Banner" width="338" height="405">
+          <div class="relative mb-16">
+            <div class="absolute -top-7 -left-7">
+              <img src="images/ribbon.svg" alt="Ribbon">
+            </div>
+            <img src="images/home_banner2.png" alt="Home-Banner" width="338" height="405">
+            <div class="absolute -bottom-7 -right-7">
+              <img src="images/ribbon.svg" alt="Ribbon">
+            </div>
+          </div>
+            <img src="images/home_banner3.png" alt="Home-Banner" width="338" height="405">
+        </div>
+        <div class="banner-sec text-center">
+          <p class="uppercase md:text-base dark:text-white text-sm italic font-playfair-italic tracking-widest m-0">HEY THERE</p>
+          <h1 class="font-playfair-semibold dark:text-white xl:text-10xl lg:text-9xl md:text-7xl sm:text-5xl text-3xl m-0 mb-5">I’m Haus</h1>
+          <p class="md:text-base text-xs dark:text-white leading-9 font-playfair-regular m-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero ex, tristique sed dignissim vel, cursus ut magna. Aenean lacinia mi eget orci aliquet pharetra. Duis ut ultricies felis. Nulla vitae mi dictum, scelerisque nibh eget, sagittis ligula.Nulla tortor quam, feugiat id laoreet ac, pellentesque sed tellus. Nunc condimentum, magna vel sodales mollis, nisl nibh ornare eros, vel malesuada nunc metus at elit. Aenean vitae arcu auctor, imperdiet nisl quis, interdum lacus.</p>
+          <a href="#" class="px-4 py-2 dark:text-white lg:text-md md:text-base text-xs border border-solid border-thistleGreen inline-block text-darkGray no-underline italic font-playfair-italic tracking-widest font-medium bg-transparent hover:bg-thistleGreen transition hover:text-white">READ THE WHOLE STORY</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="bg-lightYellow py-16 md:py-14 sm:py-11">
+      
+    </section>
+
+
+
+    <script>
+      // function toggleNavbar(collapseID){
+      //   document.getElementById(collapseID).classList.toggle("hidden");
+      //   document.getElementById(collapseID).classList.toggle("flex");
+
+      // }
+      
+      
+      const checkbox = document.getElementById('checkbox');
+      
+      checkbox.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+      });
+
+      function toggleNavbar(collapseID) {
+        var btn = document.getElementById('menuBtn');
+        var nav = document.getElementById('collapse-navbar');
+        btn.classList.toggle('open');
+        nav.classList.toggle('flex');
+        nav.classList.toggle('hidden');
+         
+    }
+
+    </script>
+</body>
+
+</html>
+
