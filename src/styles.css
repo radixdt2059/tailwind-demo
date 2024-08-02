@@ -429,27 +429,27 @@
 @font-face
 {
     font-family: 'playfair-regular';
-    src: url('../src/fonts/PlayfairDisplay-Regular.ttf');
+    src: url('/src/fonts/PlayfairDisplay-Regular.ttf');
 }
 @font-face
 {
     font-family: 'playfair-bold';
-    src: url('../src/fonts/PlayfairDisplay-Bold.ttf');
+    src: url('/src/fonts/PlayfairDisplay-Bold.ttf');
 }
 @font-face
 {
     font-family: 'playfair-italic';
-    src: url('../src/fonts/PlayfairDisplay-Italic.ttf');
+    src: url('/src/fonts/PlayfairDisplay-Italic.ttf');
 }
 @font-face
 {
     font-family: 'playfair-medium';
-    src: url('../src/fonts/PlayfairDisplay-Medium.ttf');
+    src: url('/src/fonts/PlayfairDisplay-Medium.ttf');
 }
 @font-face
 {
     font-family: 'playfair-semibold';
-    src: url('../src/fonts/PlayfairDisplay-SemiBold.ttf');
+    src: url('/src/fonts/PlayfairDisplay-SemiBold.ttf');
 }
 
 body.dark {
